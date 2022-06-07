@@ -1,0 +1,85 @@
+.full {
+  width: 100%;
+}
+.abouttt {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.68rem;
+  color: rgb(156, 155, 155);
+  letter-spacing: 0.11rem;
+}
+.happyy {
+  text-align: center;
+  color: #3c90f7;
+  font-weight: 3px;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+  font-size: 2.5rem;
+}
+.happyy.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+.black {
+  color: black;
+  padding-left: 10px;
+}
+.service {
+  background-color: #f8f9fa;
+  width: 350px;
+  height: 250px;
+  
+  margin-left: 10%;
+  opacity: 0;
+  transform: translatex(4em) rotateZ(-5deg);
+  transition: transform 5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+.ser {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 0.27fr);
+}
+.fa-stethoscope {
+  font-size: 35px;
+  color: #5994f7;
+  margin-left: 170px;
+  margin-top: 50px;
+}
+.titlees {
+  text-align: center;
+  margin-top: 7%;
+  letter-spacing: 2px;
+}
+.textt {
+  font-size: 12px;
+  margin-top: 4%;
+  color: #afb0af;
+  text-align: center;
+}
+.service.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+.service:hover {
+  background-color: #8ad859;
+  transition: 0.5s;
+}
+.service:hover #img {
+  color: white;
+  transition: 0.5s;
+}
+.service:hover #textt {
+  color: white;
+  transition: 0.5s;
+}
+.service:hover #titlees {
+  color: white;
+  transition: 0.5s;
+}

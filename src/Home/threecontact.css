@@ -1,0 +1,119 @@
+.three {
+  height: 70px;
+  width: 1000px;
+  display: grid;
+  gap: 2rem;
+
+  position: relative;
+  top: -40px;
+  margin: auto;
+
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+  grid-template-columns: repeat(3, 1fr);
+}
+.three.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+.threee {
+ 
+  width: 275px;
+
+ 
+  background-color: white;
+  border-radius: 1rem;
+}
+.inn{
+  display: grid;
+  width: 275px;
+  grid-template-columns: 100px 175px;
+}
+.threee:hover {
+  background-color: rgb(60 144 247);
+  transition: 0.5s;
+}
+.threee:hover #contact {
+  color: white;
+}
+.fa-phone-alt {
+  padding-top: 11px;
+  color: rgb(60 144 247);
+  padding-left: 13px;
+  align-items: center;
+}
+.fa-envelope {
+  padding-top: 11px;
+  color: rgb(60 144 247);
+  padding-left: 13px;
+  align-items: center;
+}
+.fa-map-marker {
+  padding-top: 11px;
+  color: rgb(60 144 247);
+  padding-left: 13px;
+  align-items: center;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-left: 30px;
+  margin-top: 15px;
+  background-color: rgba(60, 144, 247, 0.05);
+}
+.threee:hover #id {
+  background-color: white;
+}
+.threee:hover #title {
+  color: white;
+}
+.title {
+  font-size: 0.68rem;
+  color: #aaa;
+  letter-spacing: 0.11rem;
+}
+.contact {
+  font-size: 0.9rem;
+  color: rgb(60 144 247);
+}
+.con {
+  padding-top: 12px;
+}
+@media screen and (max-width: 1056px) {
+.three{
+  z-index: 0;
+  width: 100%;
+  height: 195px;
+  top:0;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  display: list-item;
+  transform: none;
+  transition: none;
+}
+.threee
+{
+  width: 100%;
+  height: 65px;
+  border-radius: 0;
+  transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1),
+  opacity 0.3s 0.25s ease-out;
+  
+}
+.inn{
+  margin: auto auto auto auto;
+  padding: auto auto auto auto;
+}
+.img{
+  margin-bottom: 5px;
+}
+.con{
+  
+}
+}
